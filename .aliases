@@ -1,0 +1,12 @@
+alias ctags="`brew --prefix`/bin/ctags"
+
+# Docker
+alias dps="docker ps"
+alias drm="docker rm"
+alias dstop="docker stop"
+alias dlogs="docker logs -f"
+
+# Ruby
+alias brails="bundle exec rails"
+alias brake="bundle exec rake"
+alias bexec="bundle exec"
