@@ -11,8 +11,13 @@ alias brails="bundle exec rails"
 alias brake="bundle exec rake"
 alias bexec="bundle exec"
 
+# Elixir
+alias iexm="iex -S mix"
+
+# Python
+alias prun="pipenv run"
+
 alias untar="tar -xvzf"
 
-# Postgres Commands
 alias pg_start="pg_ctl -D /usr/local/var/postgres start"
 alias pg_stop="pg_ctl -D /usr/local/var/postgres stop"
