@@ -13,13 +13,13 @@ Plugin 'VundleVim/Vundle.vim'
 
 " plugins here
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-commentary'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'valloric/youcompleteme'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
@@ -30,6 +30,9 @@ Plugin 'benmills/vimux'
 Plugin 'pgr0ss/vimux-ruby-test'
 Plugin 'tpope/vim-abolish'
 Plugin 'rking/ag.vim'
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/javascript-libraries-syntax.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -107,3 +110,8 @@ map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
 " Clean empty spaces
 nnoremap <silent> <LocalLeader>ww :%s/\s\+$//<CR>:let @/=''<CR><C-o>
 
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+noremap <Leader>Y "+y
