@@ -9,6 +9,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rking/ag.vim'
 
 call plug#end()
 
